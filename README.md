@@ -12,6 +12,4 @@ additionally installed packages:
 * curl 
 * python
 * python-dev
-
-removed packages:
-* py-pip (is used only on image creation)
+* py-pip
