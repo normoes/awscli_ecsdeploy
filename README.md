@@ -13,3 +13,7 @@ additionally installed packages:
 * python
 * python-dev
 * py-pip
+
+---
+
+at [docker hub](https://hub.docker.com/r/normoes/awscli_ecsdeploy/)
