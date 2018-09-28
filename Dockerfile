@@ -7,9 +7,7 @@ RUN apk update \
     && pip install --upgrade pip \
     && pip install awscli --upgrade --user \
     && pip install ecs-deploy --upgrade --user \
-    && rm -rf /var/cache/apk/* \
-    && aws --version \
-    && docker --version
+    && rm -rf /var/cache/apk/*
 
 ENTRYPOINT []
 CMD []
