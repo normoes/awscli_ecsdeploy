@@ -8,9 +8,9 @@ I use this image to avoid downloading/installing necessary tools during the **gi
 * python2 is used:
   - `Python 2.7.15`
 * `pip list` shows:
-  - awscli          1.16.23            
-  - boto3           1.9.13            
-  - botocore        1.12.13               
+  - awscli          1.16.25            
+  - boto3           1.9.15            
+  - botocore        1.12.15               
   - certifi         2018.8.24          
   - chardet         3.0.4              
   - click           7.0              
@@ -28,7 +28,7 @@ I use this image to avoid downloading/installing necessary tools during the **gi
   - requests        2.19.1             
   - rsa             3.4.2              
   - s3transfer      0.1.13             
-  - setuptools      39.1.0.post20180508
+  - setuptools      40.4.3
   - six             1.11.0             
   - urllib3         1.23
 * Additionally installed packages:
