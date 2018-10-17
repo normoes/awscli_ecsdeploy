@@ -8,34 +8,35 @@ I use this image to avoid downloading/installing necessary tools during the **gi
 * python2 is used:
   - `Python 2.7.15`
 * `pip list` shows:
-  - awscli          1.16.25            
-  - boto3           1.9.15            
-  - botocore        1.12.15               
-  - certifi         2018.8.24          
-  - chardet         3.0.4              
-  - click           7.0              
-  - colorama        0.3.9              
-  - docutils        0.14               
+  - awscli          1.16.35
+  - boto3           1.9.25
+  - botocore        1.12.25
+  - certifi         2018.10.15
+  - chardet         3.0.4
+  - click           7.0           
+  - colorama        0.3.9
+  - docutils        0.14
   - ecs-deploy      1.4.3
-  - future          0.16.0             
-  - futures         3.2.0              
-  - idna            2.7                
-  - jmespath        0.9.3              
-  - pip             18.0               
-  - pyasn1          0.4.4              
-  - python-dateutil 2.7.3              
-  - PyYAML          3.13               
-  - requests        2.19.1             
-  - rsa             3.4.2              
-  - s3transfer      0.1.13             
+  - future          0.16.0
+  - futures         3.2.0
+  - idna            2.7
+  - jmespath        0.9.3
+  - pip             18.1
+  - pyasn1          0.4.4
+  - python-dateutil 2.7.3
+  - PyYAML          3.13
+  - requests        2.19.1
+  - rsa             3.4.2
+  - s3transfer      0.1.13
   - setuptools      40.4.3
-  - six             1.11.0             
+  - six             1.11.0
   - urllib3         1.23
 * Additionally installed packages:
-  - curl
-  - python
-  - python-dev
-  - py-pip
+  - `curl`
+  - `python`
+  - `python-dev`
+  - `py-pip`
+  - `jq`
 
 ---
 
