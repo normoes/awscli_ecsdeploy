@@ -8,6 +8,7 @@ RUN apk update \
     && pip install --upgrade --user awscli \
     && pip install --upgrade --user ecs-deploy \
     && pip install --upgrade --user setuptools  \
+    && pip install --upgrade --user s3cmd  \
     && rm -rf /var/cache/apk/*
 
 ENTRYPOINT []
