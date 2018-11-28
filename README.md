@@ -10,10 +10,10 @@ I use this image to avoid downloading/installing necessary tools during the **gi
 * `pip list` shows:
   - appdirs         1.4.3     
   - attrs           18.2.0  
-  - awscli          1.16.62
+  - awscli          1.16.63
   - black           18.9b0
-  - boto3           1.9.52
-  - botocore        1.12.52
+  - boto3           1.9.53
+  - botocore        1.12.53
   - certifi         2018.10.15
   - chardet         3.0.4
   - click           6.7
@@ -21,7 +21,6 @@ I use this image to avoid downloading/installing necessary tools during the **gi
   - docutils        0.14
   - ecs-deploy      1.5.0
   - future          0.17.1
-  - futures         3.2.0
   - idna            2.7
   - jmespath        0.9.3
   - pip             18.1
