@@ -9,6 +9,7 @@ RUN apk update \
     && pip install --upgrade ecs-deploy \
     && pip install --upgrade setuptools  \
     && pip install --upgrade black  \
+    && pip install --upgrade bandit  \
     && rm -rf /var/cache/apk/*
 
 ENTRYPOINT []
