@@ -10,6 +10,8 @@ RUN apk update \
     && pip install --upgrade setuptools  \
     && pip install --upgrade black  \
     && pip install --upgrade bandit  \
+    && pip install --upgrade sphinx  \
+    && pip install --upgrade sphinx_rtd_theme  \
     && rm -rf /var/cache/apk/*
 
 ENTRYPOINT []

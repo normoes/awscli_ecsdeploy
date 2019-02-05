@@ -8,13 +8,15 @@ I use this image to avoid downloading/installing necessary tools during the **gi
 * python2 is used:
   - `Python 3.6.6`
 * `pip list` shows:
+  - alabaster       0.7.12
   - appdirs         1.4.3     
   - attrs           18.2.0  
-  - awscli          1.16.87
+  - awscli          1.16.97
+  - Babel           2.6.0
   - bandit          1.5.1 
   - black           18.9b0
-  - boto3           1.9.77
-  - botocore        1.12.77
+  - boto3           1.9.87
+  - botocore        1.12.87
   - certifi         2018.11.29
   - chardet         3.0.4
   - click           6.7
@@ -26,17 +28,26 @@ I use this image to avoid downloading/installing necessary tools during the **gi
   - GitPython       2.1.11
   - idna            2.8
   - jmespath        0.9.3
-  - pbr             5.1.1 
-  - pip             18.1
+  - MarkupSafe      1.1.0
+  - packaging       19.0
+  - pbr             5.1.2
+  - pip             19.0.1
   - pyasn1          0.4.5
+  - Pygments        2.3.1
+  - pyparsing       2.3.1
   - python-dateutil 2.7.5
+  - pytz            2018.9
   - PyYAML          3.13
   - requests        2.21.0
   - rsa             3.4.2
   - s3transfer      0.1.13
-  - setuptools      40.6.2
+  - setuptools      40.7.3
   - six             1.12.0
-  - smmap2          2.0.5     
+  - smmap2          2.0.5
+  - snowballstemmer 1.2.1
+  - Sphinx          1.8.4
+  - sphinx-rtd-theme         0.4.2
+  - sphinxcontrib-websupport 1.1.0
   - stevedore       1.30.0 
   - toml            0.10.0  
   - urllib3         1.24.1
