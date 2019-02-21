@@ -12,5 +12,5 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-docker build -t normo/aws_test:$1 .
+docker build --no-cache -t normo/aws_test:$1 .
 
