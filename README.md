@@ -11,12 +11,12 @@ I use this image to avoid downloading/installing necessary tools during the **gi
   - alabaster       0.7.12
   - appdirs         1.4.3
   - attrs           18.2.0
-  - awscli          1.16.109
+  - awscli          1.16.114
   - Babel           2.6.0
   - bandit          1.5.1
   - black           18.9b0
-  - boto3           1.9.99
-  - botocore        1.12.99
+  - boto3           1.9.104
+  - botocore        1.12.104
   - certifi         2018.11.29
   - chardet         3.0.4
   - click           6.7
@@ -27,11 +27,10 @@ I use this image to avoid downloading/installing necessary tools during the **gi
   - gitdb2          2.0.5
   - GitPython       2.1.11
   - idna            2.8
-  - jmespath        0.9.3
   - MarkupSafe      1.1.0
   - Jinja2          2.10
-  - jmespath        0.9.3
-  - MarkupSafe      1.1.0
+  - jmespath        0.9.4
+  - MarkupSafe      1.1.1
   - packaging       19.0
   - pbr             5.1.2
   - pip             19.0.3
