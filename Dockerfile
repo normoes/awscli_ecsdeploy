@@ -10,9 +10,9 @@ RUN apk update \
     && pip install --upgrade setuptools  \
     && pip install --upgrade black  \
     && pip install --upgrade bandit  \
+    && pip install --upgrade safety  \
     && pip install --upgrade sphinx  \
     && pip install --upgrade sphinx_rtd_theme  \
-    && apk del git \
     && rm -rf /var/cache/apk/*
 # && pip install --upgrade ecs-deploy \
 ENTRYPOINT []
