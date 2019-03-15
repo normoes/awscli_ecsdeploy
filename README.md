@@ -61,6 +61,7 @@ I use this image to avoid downloading/installing necessary tools during the **gi
   - `python3-dev`
   - `jq-master-v3.8.0-3651-g18d55b6bda`
   - `git version 2.20.1`
+  - `GNU bash, version 4.4.19(1)-release (x86_64-alpine-linux-musl)`
 ---
 
 at [docker hub](https://hub.docker.com/r/normoes/awscli_ecsdeploy/)

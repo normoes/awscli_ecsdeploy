@@ -1,7 +1,7 @@
 FROM docker:latest
 
 RUN apk update \
-    && apk --no-cache add curl python3 python3-dev jq git\
+    && apk --no-cache add curl python3 python3-dev jq git bash \
     && ln -s /usr/bin/pip3 /usr/bin/pip \
     && ln -s /usr/bin/python3 /usr/bin/python \
     && pip install --upgrade pip \
