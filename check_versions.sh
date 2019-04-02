@@ -12,7 +12,7 @@ if [ $# -ne 1 ]; then
   exit 1
 fi
 
-docker run -it normo/aws_test:$1 pip list
+docker run -it normo/aws_test:$1 pip freeze
 docker run -it normo/aws_test:$1 python --version
 docker run -it normo/aws_test:$1 docker --version
 docker run -it normo/aws_test:$1 git --version
