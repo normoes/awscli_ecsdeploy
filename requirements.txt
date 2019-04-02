@@ -1,5 +1,6 @@
 awscli
-ecs-deploy
+# ecs-deploy
+git+https://github.com/normoes/ecs-deploy.git@develop
 black 
 bandit
 safety
