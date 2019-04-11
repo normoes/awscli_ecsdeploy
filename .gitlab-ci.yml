@@ -10,7 +10,7 @@ stages:
 
 .gitlab_push_image_base: &gitlab_push_image_def
   extends: .deploy_image
-  stage: build_test
+  stage: build
   services:
     - docker:dind
 
