@@ -1,15 +1,10 @@
-include:
-  - project: 'general/common-gitlab-stages'
-    ref: develop
-    file: '/.gitlab-ci-deploy_image.yml'
-
 stages:
   - build
   - deploy
 
 
 .gitlab_push_image_base: &gitlab_push_image_def
-  extends: .deploy_image
+  image: docker:latest
   stage: build
   services:
     - docker:dind
