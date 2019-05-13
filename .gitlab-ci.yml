@@ -17,7 +17,7 @@ stages:
     - docker pull $REGISTRY_IMAGE:latest || true
     # build new docker image (use previous one as cache)
     - docker build --pull
-        --cache-from $REGISTRY_IMAGE:latest
+        # --cache-from $REGISTRY_IMAGE:latest
         -f $CONTEXT_PATH/$DOCKERFILE_NAME
         -t $REGISTRY_IMAGE
         $CONTEXT_PATH
