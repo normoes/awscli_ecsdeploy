@@ -21,10 +21,11 @@ stages:
     - $DOCKER_IMAGE_NAME
 
   before_script:
-    ## log into gitlab's docker registry
-    # - echo "$CI_JOB_TOKEN" | docker login --username gitlab-ci-token --password-stdin $CI_REGISTRY
+    # log into gitlab's docker registry
+    - echo "$CI_JOB_TOKEN" | docker login --username gitlab-ci-token --password-stdin $CI_REGISTRY
     - apk add --no-cache python3
     - pip3 install --no-cache-dir awscli
+    # log into ECR
     - CERT=`aws ecr get-login --no-include-email --region ${AWS_REGION}`
     - ${CERT}
 
@@ -36,15 +37,18 @@ stages:
         -f $CONTEXT_PATH/$DOCKERFILE_NAME
         -t $REGISTRY_IMAGE:$REPO_TAG
         $CONTEXT_PATH
-    # push new docker image to AWS ECR
+    # push new docker image to AWS ECR and gitlab registry
     - docker push $REGISTRY_IMAGE:$REPO_TAG
+    - docker tag $REGISTRY_IMAGE:$REPO_TAG $REGISTRY_IMAGE_GITLAB:$REPO_TAG
+    - docker push $REGISTRY_IMAGE_GITLAB:$REPO_TAG
     # remove local docker image
     - docker image rm $REGISTRY_IMAGE:$REPO_TAG
+    - docker image rm $REGISTRY_IMAGE_GITLAB:$REPO_TAG
 
 build_image_tags:
   <<: *gitlab_push_image_def
   variables:
-    # REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
+    REGISTRY_IMAGE_GITLAB: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
     REGISTRY_IMAGE: $ECR_REPO_STAGING/$CI_PROJECT_NAME
     DOCKERFILE_NAME: Dockerfile 
     CONTEXT_PATH: .
@@ -57,7 +61,7 @@ build_image_tags:
 build_image_staging:
   <<: *gitlab_push_image_def
   variables:
-    # REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
+    REGISTRY_IMAGE_GITLAB: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
     REGISTRY_IMAGE: $ECR_REPO_STAGING/$CI_PROJECT_NAME
     DOCKERFILE_NAME: Dockerfile 
     CONTEXT_PATH: .
@@ -70,7 +74,7 @@ build_image_staging:
 build_image_prod:
   <<: *gitlab_push_image_def
   variables:
-    # REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
+    REGISTRY_IMAGE_GITLAB: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
     REGISTRY_IMAGE: $ECR_REPO_PROD/$CI_PROJECT_NAME
     DOCKERFILE_NAME: Dockerfile 
     CONTEXT_PATH: .
