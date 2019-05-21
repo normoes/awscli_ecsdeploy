@@ -24,7 +24,7 @@ stages:
     ## log into gitlab's docker registry
     # - echo "$CI_JOB_TOKEN" | docker login --username gitlab-ci-token --password-stdin $CI_REGISTRY
     - apk add --no-cache python3
-    - pip install --no-cache-dir awscli
+    - pip3 install --no-cache-dir awscli
     - CERT=`aws ecr get-login --no-include-email --region ${AWS_REGION}`
     - ${CERT}
 
@@ -45,7 +45,7 @@ build_image_tags:
   <<: *gitlab_push_image_def
   variables:
     # REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
-    REGISTRY_IMAGE: $ECR_REPO_STAGING/core/$CI_PROJECT_NAME
+    REGISTRY_IMAGE: $ECR_REPO_STAGING/$CI_PROJECT_NAME
     DOCKERFILE_NAME: Dockerfile 
     CONTEXT_PATH: .
     REPO_TAG: $CI_COMMIT_REF_NAME
@@ -58,7 +58,7 @@ build_image_staging:
   <<: *gitlab_push_image_def
   variables:
     # REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
-    REGISTRY_IMAGE: $ECR_REPO_STAGING/core/$CI_PROJECT_NAME
+    REGISTRY_IMAGE: $ECR_REPO_STAGING/$CI_PROJECT_NAME
     DOCKERFILE_NAME: Dockerfile 
     CONTEXT_PATH: .
     REPO_TAG: $CI_COMMIT_REF_NAME
@@ -71,7 +71,7 @@ build_image_prod:
   <<: *gitlab_push_image_def
   variables:
     # REGISTRY_IMAGE: $CI_REGISTRY_IMAGE/$CI_PROJECT_NAME
-    REGISTRY_IMAGE: $ECR_REPO_PROD/core/$CI_PROJECT_NAME
+    REGISTRY_IMAGE: $ECR_REPO_PROD/$CI_PROJECT_NAME
     DOCKERFILE_NAME: Dockerfile 
     CONTEXT_PATH: .
     REPO_TAG: $CI_COMMIT_REF_NAME
