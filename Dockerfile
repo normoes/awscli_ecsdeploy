@@ -7,6 +7,7 @@ RUN apk --no-cache add \
         jq \
         git \
         bash \
+        zip \
     && ln -s /usr/bin/pip3 /usr/bin/pip \
     && ln -s /usr/bin/python3 /usr/bin/python \
     && pip install --no-cache-dir --upgrade pip \
