@@ -4,19 +4,19 @@ docker image including docker, awscli and [ecs-deploy](https://github.com/fabfue
 I use this image to avoid downloading/installing necessary tools during the **gitlab-ci deployment** pipelines.
 
 * image is based on `docker:latest`:
-  - `Docker version 18.09.3, build 774a1f4`
+  - `Docker version 18.09.6, build 481bc77`
 * python3 is used:
   - `Python 3.6.8`
 * `pip freeze` shows:
 ```
 appdirs==1.4.3
 attrs==19.1.0
-awscli==1.16.163
-bandit==1.6.0
+awscli==1.16.180
+bandit==1.6.1
 black==19.3b0
-boto3==1.9.153
-botocore==1.12.153
-certifi==2019.3.9
+boto3==1.9.170
+botocore==1.12.170
+certifi==2019.6.16
 chardet==3.0.4
 click==6.7
 colorama==0.3.9
@@ -29,20 +29,20 @@ GitPython==2.1.11
 idna==2.8
 jmespath==0.9.4
 packaging==19.0
-pbr==5.2.0
+pbr==5.3.0
 pyasn1==0.4.5
 pyparsing==2.4.0
 python-dateutil==2.8.0
-PyYAML==3.13
+PyYAML==5.1
 requests==2.22.0
 rsa==3.4.2
-s3transfer==0.2.0
+s3transfer==0.2.1
 safety==1.8.5
 six==1.12.0
 smmap2==2.0.5
 stevedore==1.30.1
 toml==0.10.0
-urllib3==1.24.3
+urllib3==1.25.3
 ```
 
 * Additionally installed packages:
