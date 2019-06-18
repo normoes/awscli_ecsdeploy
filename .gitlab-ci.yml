@@ -1,12 +1,12 @@
 include:
   - project: 'general/common-gitlab-stages'
-    ref: develop
+    ref: staging
     file: '/.gitlab-ci-deploy_image.yml'
   - project: 'general/common-gitlab-stages'
     ref: master
     file: '/.gitlab-ci-deploy_service.yml'
   - project: 'general/common-gitlab-stages'
-    ref: develop
+    ref: staging
     file: '/environment/.gitlab-ci-css-core-env.yml'
 
 stages:
