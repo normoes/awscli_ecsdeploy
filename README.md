@@ -11,29 +11,30 @@ I use this image to avoid downloading/installing necessary tools during the **gi
 ```
 appdirs==1.4.3
 attrs==19.1.0
-awscli==1.16.180
-bandit==1.6.1
+awscli==1.16.226
+bandit==1.6.2
 black==19.3b0
-boto3==1.9.170
-botocore==1.12.170
+boto3==1.9.216
+botocore==1.12.216
 certifi==2019.6.16
 chardet==3.0.4
 click==6.7
 colorama==0.3.9
-docutils==0.14
+dictdiffer==0.8.0
+docutils==0.15.2
 dparse==0.4.1
-ecs-deploy==1.7.0
+ecs-deploy==1.9.0
 future==0.17.1
 gitdb2==2.0.5
-GitPython==2.1.11
+GitPython==3.0.2
 idna==2.8
 jmespath==0.9.4
-packaging==19.0
-pbr==5.3.0
-pyasn1==0.4.5
-pyparsing==2.4.0
+packaging==19.1
+pbr==5.4.2
+pyasn1==0.4.6
+pyparsing==2.4.2
 python-dateutil==2.8.0
-PyYAML==5.1
+PyYAML==5.1.2
 requests==2.22.0
 rsa==3.4.2
 s3transfer==0.2.1
@@ -47,14 +48,14 @@ urllib3==1.25.3
 
 * Additionally installed packages:
 ```
-Python 3.6.8
-Docker version 18.09.6, build 481bc77
-git version 2.20.1
-jq-master-v3.8.0-3651-g18d55b6bda
-curl 7.64.0 (x86_64-alpine-linux-musl) libcurl/7.64.0 OpenSSL/1.1.1b zlib/1.2.11 libssh2/1.8.2 nghttp2/1.35.1
-GNU bash, version 4.4.19(1)-release (x86_64-alpine-linux-musl)
-This is Zip 3.0 (July 5th 2008), by Info-ZIP. 
-  Compiled with gcc 8.2.0 for Unix (Linux ELF) on Nov 15 2018.
+Python 3.7.3
+Docker version 19.03.1, build 74b1e89e8a
+git version 2.22.0
+jq-master-v20190408-1671-g3fd4a8c851
+curl 7.65.1 (x86_64-alpine-linux-musl) libcurl/7.65.1 OpenSSL/1.1.1c zlib/1.2.11 nghttp2/1.39.2
+GNU bash, version 5.0.0(1)-release (x86_64-alpine-linux-musl)
+This is Zip 3.0 (July 5th 2008), by Info-ZIP.
+  Compiled with gcc 8.3.0 for Unix (Linux ELF) on May  3 2019.
 ```
 
 ---
