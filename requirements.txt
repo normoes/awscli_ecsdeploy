@@ -4,3 +4,4 @@ git+https://github.com/normoes/ecs-deploy.git@develop
 black 
 bandit
 safety
+pytest
