@@ -1,6 +1,8 @@
 FROM docker:latest
 
 RUN apk --no-cache add \
+        musl-dev \
+        gcc \
         curl \
         python3 \
         python3-dev \
