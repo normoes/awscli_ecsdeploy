@@ -1,7 +1,8 @@
-awscli
+awscli==1.18.0
 # ecs-deploy
 git+https://github.com/normoes/ecs-deploy.git@develop
-black 
-bandit
-safety
-pytest
+black==19.10b0
+bandit==1.6.2
+safety==1.8.5
+pytest==5.3.5
+flake8==3.7.9
