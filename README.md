@@ -6,12 +6,13 @@ I use this image to avoid downloading/installing necessary tools during the **gi
 * `pip freeze` shows:
 ```
 appdirs==1.4.3
+astroid==2.3.3
 attrs==19.3.0
 awscli==1.18.0
 bandit==1.6.2
 black==19.10b0
 boto3==1.12.0
-botocore==1.15.0
+botocore==1.15.1
 certifi==2019.11.28
 chardet==3.0.4
 click==6.7
@@ -26,7 +27,9 @@ future==0.18.2
 gitdb2==3.0.2
 GitPython==3.0.8
 idna==2.8
+isort==4.3.21
 jmespath==0.9.4
+lazy-object-proxy==1.4.3
 mccabe==0.6.1
 more-itertools==8.2.0
 packaging==20.1
@@ -37,6 +40,7 @@ py==1.8.1
 pyasn1==0.4.8
 pycodestyle==2.5.0
 pyflakes==2.1.1
+pylint==2.4.4
 pyparsing==2.4.6
 pytest==5.3.5
 python-dateutil==2.8.1
@@ -53,6 +57,7 @@ toml==0.10.0
 typed-ast==1.4.1
 urllib3==1.25.8
 wcwidth==0.1.8
+wrapt==1.11.2
 ```
 
 * Additionally installed packages:
