@@ -1,25 +1,23 @@
-FROM docker:latest
+FROM python:3.7-alpine3.10
 
 RUN apk --no-cache add \
         musl-dev \
         gcc \
         curl \
-        python3 \
-        python3-dev \
+        docker \
         jq \
         git \
         bash \
         zip \
-    && ln -s /usr/bin/pip3 /usr/bin/pip \
-    && ln -s /usr/bin/python3 /usr/bin/python \
     && pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir --upgrade setuptools  \
+    && pip install --no-cache-dir --upgrade pip-tools==4.4.1  \
     && rm -rf /var/cache/apk/*
-# && pip install --upgrade ecs-deploy \
 
 COPY requirements.txt /
+COPY requirements_compiled.txt /
 
-RUN pip install --no-cache-dir  --upgrade -r requirements.txt
+RUN pip-sync requirements_compiled.txt
 
 ENTRYPOINT []
 CMD []
