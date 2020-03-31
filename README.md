@@ -3,7 +3,7 @@ docker image including docker, awscli and [ecs-deploy](https://github.com/fabfue
 
 I use this image to avoid downloading/installing necessary tools during the **gitlab-ci deployment** pipelines.
 
-* `pip-compile --output-file=requirements_compiled.txt requirements.txt` shows:
+* `pip-compile --rebuild --upgrade --output-file=requirements_compiled.txt requirements.txt` shows:
 ```
 appdirs==1.4.3            # via black, virtualenv
 astroid==2.3.3            # via pylint
@@ -91,7 +91,7 @@ This project uses `pip-tools` to create a requirements file that is used during 
 The general workflow:
 * Create the requirements file:
 ```
-    pip-compile --output-file requirements_compiled.txt requirements.txt
+    pip-compile --rebuild --output-file requirements_compiled.txt requirements.txt
 ```
 * Install the project dependencies using the created `requirements_compiled.txt`:
 ```
