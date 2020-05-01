@@ -13,5 +13,5 @@ if [ $# -ne 1 ]; then
 fi
 
 # docker run -it normo/aws_test:$1 pip freeze
-docker run -it normo/aws_test:$1 pip-compile --output-file requirements_compiled.txt requirements.txt
+docker run -it normo/aws_test:$1 pip freeze
 docker run -it normo/aws_test:$1 python --version && docker --version && git --version && jq --version && curl --version && bash --version && zip --version

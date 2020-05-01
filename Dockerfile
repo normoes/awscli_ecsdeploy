@@ -11,7 +11,7 @@ RUN apk --no-cache add \
         zip \
     && pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir --upgrade setuptools  \
-    && pip install --no-cache-dir --upgrade pip-tools==4.4.1  \
+    && pip install --no-cache-dir --upgrade pip-tools==5.1.1  \
     && rm -rf /var/cache/apk/*
 
 COPY requirements.txt /
