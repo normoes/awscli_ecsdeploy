@@ -1,12 +1,12 @@
 include:
   - project: 'general/common-gitlab-stages'
-    ref: v0.0.8
+    ref: v0.0.10
     file: '/.gitlab-ci-deploy_image.yml'
   - project: 'general/common-gitlab-stages'
-    ref: v0.0.8
+    ref: v0.0.10
     file: '/.gitlab-ci-deploy_service.yml'
   - project: 'general/common-gitlab-stages'
-    ref: v0.0.8
+    ref: v0.0.10
     file: '/environment/.gitlab-ci-css-core-env.yml'
 
 stages:
