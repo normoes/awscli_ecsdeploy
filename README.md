@@ -86,10 +86,10 @@ This project uses `pip-tools` to create a requirements file that is used during 
 The general workflow:
 * Create the requirements file:
 ```
-    pip-compile --rebuild --upgrade --output-file requirements_compiled.txt requirements.txt
+    pip-compile --rebuild --upgrade --output-file requirements.txt requirements.in
 ```
-* Install the project dependencies using the created `requirements_compiled.txt`:
+* Install the project dependencies using the created `requirements.txt`:
 ```
-    pip-sync requirements_compiled.txt
+    pip-sync requirements.txt
 ```
 

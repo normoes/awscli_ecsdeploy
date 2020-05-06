@@ -15,9 +15,8 @@ RUN apk --no-cache add \
     && rm -rf /var/cache/apk/*
 
 COPY requirements.txt /
-COPY requirements_compiled.txt /
 
-RUN pip-sync requirements_compiled.txt
+RUN pip-sync requirements.txt
 
 ENTRYPOINT []
 CMD []

@@ -1,0 +1,11 @@
+boto3==1.13.0
+awscli==1.18.50
+# ecs-deploy
+git+https://github.com/normoes/ecs-deploy.git@upstream_merge
+# git+https://github.com/normoes/ecs-deploy.git@develop
+black==19.10b0
+bandit==1.6.2
+safety==1.8.7
+pytest==5.4.1
+flake8==3.7.9
+pylint==2.4.4
